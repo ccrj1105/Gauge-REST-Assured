@@ -4,10 +4,16 @@ import com.thoughtworks.gauge.Step;
 import com.thoughtworks.gauge.Table;
 import com.thoughtworks.gauge.TableRow;
 import java.util.HashSet;
+import rest.Rest;
 
 public class StepImplementation {
 
   private HashSet<Character> vowels;
+  private Rest rest;
+
+  public StepImplementation() {
+    this.rest = new Rest();
+  }
 
   @Step("Vowels in English language are <vowelString>.")
   public void setLanguageVowels(String vowelString) {
@@ -15,6 +21,7 @@ public class StepImplementation {
     for (char ch : vowelString.toCharArray()) {
       vowels.add(ch);
     }
+    rest.restTest();
   }
 
   @Step("The word <word> has <expectedCount> vowels.")
