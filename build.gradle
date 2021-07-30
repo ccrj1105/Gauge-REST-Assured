@@ -11,13 +11,12 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation  'com.thoughtworks.gauge:gauge-java:0.7.15'
     implementation 'io.rest-assured:rest-assured:4.4.0'
-    testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
-
-
+    implementation 'org.testng:testng:7.4.0'
+    implementation 'io.rest-assured:rest-assured:4.4.0'
 }
 
 test {

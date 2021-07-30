@@ -21,7 +21,7 @@ public class StepImplementation {
     for (char ch : vowelString.toCharArray()) {
       vowels.add(ch);
     }
-    rest.restTest();
+    rest.restTest1();
   }
 
   @Step("The word <word> has <expectedCount> vowels.")
