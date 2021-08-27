@@ -25,4 +25,8 @@ public class RestAssuredStep {
   public void primerEjemploCurso() {
     rest.primerEjemploCurso();
   }
+  @Step("emoji")
+  public void holaEmoji(){
+    System.out.println("hola");
+  }
 }
